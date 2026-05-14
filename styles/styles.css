@@ -21,10 +21,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
 main {
     max-width: 840;
 }
@@ -47,6 +43,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 2px solid #333;
+    padding: 10px;
+    box-shadow: 4 4 10px rgba(0, 0, 0, 0.3);
 }
 
 p {
