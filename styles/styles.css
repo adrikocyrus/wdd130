@@ -1,21 +1,38 @@
 :root {
+    /*color*/
     --primary-color: darkblue;
-    --secondary-color: #333;
-    --light-background: #eee;
     --text-light: white;
+    --text-dark: #333;
+    --light-background: #eee;
     --border-color: #000;
     --shadow-color: gray;
-
+    /*font*/
+    --main-font: Roboto,
+        Arial,
+        sans-serif;
+    --base-font-size: 20px;
+    /*sizes*/
     --main-width: 840px;
     --main-image-width: 150px;
     --aside-image-width: 200px;
-
-    --default-padding: 1rem;
+    --aside-width: 20rem;
+    /*spacing*/
     --small-padding: 10px;
+    --medium-padding: 1rem;
     --large-padding: 20px;
 }
 
-/*navigation*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--base-font-size);
+    font-family: var(--main-font);
+}
+
 nav {
     background-color: var(--primary-color);
     padding: var(--small-padding);
@@ -27,12 +44,10 @@ nav a {
     padding: var(--large-padding);
 }
 
-/*headings*/
 h1 {
     color: var(--primary-color);
 }
 
-/*general images*/
 img {
     width: var(--main-image-width);
     height: auto;
@@ -41,45 +56,56 @@ img {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-/*main section*/
 main {
     max-width: var(--main-width);
 }
 
-/*aside section*/
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: var(--default-padding);
-    background-color: var(--light-background);
-    color: var(--secondary-color);
-    text-align: center;
+main img {
+    width: var(--main-image-width);
+    height: auto;
+    border: 1px solid var(--text-dark);
+    padding: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
-/*aside img*/
+aside {
+    width: var(--aside-width);
+    text-align: center;
+    position: relative;
+}
+
 aside img {
     width: var(--aside-image-width);
     height: auto;
 }
 
-/* main img*/
-main img {
-    width: var(--main-image-width);
-    height: auto;
-    border: 1px solid var(--secondary-color);
-    padding: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+aside h2 {
+    position: absolute;
+    bottom: 530px;
+    right: 80px;
 }
 
-/*paragraphs*/
 p {
     padding: 0;
+    margin: 1.5rem;
 }
 
-/*footer section*/
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+.box {
+    margin: var(--medium-padding);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--light-background);
+    color: var(--border-color);
+    padding: var(--medium-padding);
+}
+
+.indent {
+    padding-left: 2rem;
 }
