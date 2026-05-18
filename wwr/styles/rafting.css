@@ -1,5 +1,5 @@
 :root {
-    --primary-color: forestgreen;
+    --primary-color: darkgreen;
     --secondary-color: #f4a261;
     --accent1-color: darkslateblue;
     --accent2-color: #e9c46a;
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: #222;
+    color: var(--accent2-color);
 }
 
 header,
@@ -28,7 +28,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: #0b3d0b;
+    color: var(--primary-color);
     background-color: var(--accent2-color);
     padding: 15px;
     width: 100%;
@@ -78,7 +78,7 @@ h1 {
 }
 
 .hero article p {
-    color: #1f1f1f;
+    color: var(--primary-color);
 }
 
 .hero article img {
