@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #222;
 }
 
 header,
@@ -28,7 +28,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #0b3d0b;
     background-color: var(--accent2-color);
     padding: 15px;
     width: 100%;
@@ -75,6 +75,10 @@ h1 {
     padding: 20px;
     background-color: var(--secondary-color);
     border-radius: 10px;
+}
+
+.hero article p {
+    color: #1f1f1f;
 }
 
 .hero article img {
