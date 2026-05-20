@@ -1,6 +1,6 @@
 :root {
     --primary-color: darkgreen;
-    --secondary-color: #f4a261;
+    --secondary-color: white;
     --accent1-color: darkslateblue;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -109,7 +109,7 @@ footer p {
 }
 
 footer {
-    border-top: 0.1px solid black;
+    border-top: 0.1px var(--secondary-color);
     margin-top: 15px;
     padding-top: 0.5px;
 }
