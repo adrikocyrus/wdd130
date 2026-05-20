@@ -86,7 +86,7 @@ h1 {
 }
 
 .hero article p {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 .hero article img {
@@ -97,10 +97,15 @@ h1 {
     padding: 10px;
 }
 
+section p {
+    color: var(--primary-color);
+}
+
 footer p {
     display: flex;
     flex-direction: column;
     padding: 2px;
+    color: var(--primary-color);
 }
 
 footer {
