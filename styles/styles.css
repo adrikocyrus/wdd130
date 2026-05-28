@@ -4,8 +4,8 @@
     --text-light: white;
     --text-dark: #333;
     --light-background: #eee;
-    --border-color: #000;
-    --shadow-color: gray;
+    --border: #000;
+    /* --shadow-color: gray; */
     /*font*/
     --main-font: Roboto,
         Arial,
@@ -18,7 +18,7 @@
     --aside-width: 20rem;
     /*spacing*/
     --small-padding: 10px;
-    --medium-padding: 1rem;
+    --padding: 1rem;
     --large-padding: 0.5rem;
 }
 
@@ -37,7 +37,15 @@ footer {
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 20rem 1fr;
+}
+
+.box {
+    color: var(--primary-color);
+}
+
+.box a:hover {
+    color: var(--text-light);
 }
 
 main {
@@ -45,12 +53,12 @@ main {
     margin: 1rem;
 }
 
-aside {
+/*aside {
     width: 20rem;
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
-}
+}*/
 
 body {
     font-size: var(--base-font-size);
@@ -59,7 +67,7 @@ body {
 
 nav {
     background-color: var(--primary-color);
-    padding: var(--medium-padding);
+    padding: var(--padding);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -69,14 +77,21 @@ nav a {
     display: block;
     color: var(--text-light);
     padding: var(--large-padding);
+    text-align: center;
+    /* position: relative; */
+    /* grid-column: 1/2; */
+    /* grid-row: 1/2; */
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    /* font-size: 1.2rem; */
+    /* font-weight: 700; */
 }
 
 h1 {
     color: var(--primary-color);
-    border: bottom;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.25rem;
 }
 
 img {
@@ -90,9 +105,8 @@ img {
 main img {
     width: var(--main-image-width);
     height: auto;
-    border: 1px solid var(--text-dark);
-    padding: 0;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--text-dark);
+    padding: var(padding);
     float: right;
     margin: 0 0 1rem 1rem;
 }
@@ -101,6 +115,9 @@ aside {
     width: var(--aside-width);
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: var(--primary-color)
 }
 
 aside img {
@@ -109,9 +126,9 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
-    bottom: 530px;
-    right: 80px;
+    position: static;
+    margin-bottom: 0.5rem;
+    /* right: 80px; */
 }
 
 p {
