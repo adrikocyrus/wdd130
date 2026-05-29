@@ -13,7 +13,7 @@
     --base-font-size: 20px;
     /*sizes*/
     --main-width: 840px;
-    --main-image-width: 150px;
+    --main-image-width: 120px;
     --aside-image-width: 200px;
     --aside-width: 20rem;
     /*spacing*/
@@ -32,7 +32,8 @@ header,
 .grid,
 footer {
     max-width: 840px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    max-width: none;
 }
 
 .grid {
@@ -41,7 +42,9 @@ footer {
 }
 
 .box {
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    margin: none;
+    width: 100%;
 }
 
 .box a:hover {
@@ -51,6 +54,13 @@ footer {
 main {
     grid-column: 2/3;
     margin: 1rem;
+    /*grid-column: span 3;*/
+    /* width: 100%;*/
+    align-self: stretch;
+}
+
+main .box {
+    width: 100%;
 }
 
 /*aside {
@@ -104,11 +114,12 @@ img {
 
 main img {
     width: var(--main-image-width);
-    height: auto;
-    border: 2px solid var(--text-dark);
-    padding: var(padding);
+    /*height: auto;*/
+    /* border: 2px solid var(--text-dark);*/
+    /* padding: var(padding);*/
     float: right;
-    margin: 0 0 1rem 1rem;
+    /*margin: 0 0 1rem 1rem;*/
+    margin: 0 0 3rem 4rem;
 }
 
 aside {
@@ -138,7 +149,7 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border);
     text-align: center;
 }
 
