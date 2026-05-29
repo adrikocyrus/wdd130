@@ -200,10 +200,10 @@ footer {
 
 .adventures img {
     width: 100%;
-    padding-top: 8px;
+    padding: 8px;
     height: 120px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .adventures figcaption {
