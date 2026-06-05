@@ -24,58 +24,88 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/heroimage.jpg" alt="people enjoying white water rafting">
-            <h1>Splash Water Rafting Adventures</h1>
-            <article>
-                <h2>River Adventures</h2>
-                <img src="images/happy-client.jpg" alt="happy rafting client">
-                <p>Our mission is to provide exciting rafting adventures,
-                    unforgettable memories, and safe outdoor experiences for
-                    families, friends, and adventure seekers from around the world.</p>
-            </article>
-        </div>
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-content">
-                <p>
-                    White Water Rafting began with a small team of adventure lovers
-                    who wanted to share the excitement of river rafting with others.
-                    Over the years, the company has grown and welcomed many visitors
-                    looking for fun, teamwork, and unforgettable outdoor experiences.
-                </p>
-                <img src="images/history1.jpg" alt="A picture of history">
-                <p>
-                    Today, Splash Water Rafting Adventures continues to provide
-                    thrilling rafting experiences while promoting teamwork,
-                    safety, and appreciation for nature.
-                </p>
-            </div>
+        <section class="contact-info">
+            <h1>Splash Water Rafting Adventure</h1>
+            <p>15 Wampewo Avenue</p>
+            <p>Kololo, Kampala, Uganda</p>
+            <p>+256 700 123 456</p>
+            <p>adrikocyrus@gmail.com</p>
         </section>
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rafting1.jpg" alt="A Day Adventure">
-                    <figcaption>A Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting2.jpg" alt="big mallard">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting3.jpg" alt="Rafting Adventure">
-                    <figcaption>Rafting Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4.jpg" alt="Rapid Rush">
-                    <figcaption>Rapid Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting5.jpg" alt="Wild River">
-                    <figcaption>Wild River</figcaption>
-                </figure>
+
+        <section class="contact-container">
+
+            <div class="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=Kololo%20Kampala%20Uganda&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy" allowfullscreen>
+                </iframe>
             </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Placeholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Placeholder">
+                    </div>
+
+                    <div class="form-group purpose">
+                        <p>Message Purpose</p>
+
+                        <label>
+                            <input type="radio" name="purpose" value="general">
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                          placeholder="Type here"></textarea>
+                    </div>
+
+                    <label class="newsletter">
+                        <input type="checkbox" name="newsletter">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="../images/profile.png" alt="Operations Manager">
+                <figcaption>Adriko Cyrus - Operations Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide.jpg" alt="Lead River Guide">
+                <figcaption>Sarah Wakoli - Lead River Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/support.jpg" alt="Customer Support Specialist">
+                <figcaption>Kasolo Moses - Customer Support Specialist</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
