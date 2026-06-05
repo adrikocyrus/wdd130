@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    color: #1a1a8c;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+main {
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    padding: 25px 25px 30px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* LABELS */
+.question label {
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    color: #222;
+    line-height: 1.4;
+}
+
+.question-number {
+    font-weight: bold;
+    color: #1a1a8c;
+}
+
+/* TEXT INPUTS */
+input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    font-family: Georgia, serif;
+    background-color: #fff;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #1a1a8c;
+    border-color: #1a1a8c;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    font-family: Georgia, serif;
+    background-color: #fff;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 2px solid #1a1a8c;
+    border-color: #1a1a8c;
+}
+
+/* SELECT */
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    font-family: Georgia, serif;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid #1a1a8c;
+}
+
+/* CODE BLOCK */
+.code-block {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+/* SUBMIT BUTTON */
+button[type="submit"] {
+    width: 100%;
+    background-color: #1a1a8c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #12127a;
+}
