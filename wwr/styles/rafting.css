@@ -1,41 +1,45 @@
 :root {
     --primary-color: #1b4965;
-    --secondary-color: white;
+    --secondary-color: #ffffff;
     --accent1-color: #2c7da0;
     --accent2-color: #f4d35e;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
     font-family: var(--body-font);
     color: #1f2937;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-color);
 }
 
-/*header*/
+/* LAYOUT CONTAINER */
 main,
-footer {
+footer,
+header,
+.adventures,
+.contact-container {
     width: 1000px;
     margin: 0 auto;
-    color: #1f2937;
 }
 
+/* HEADER */
 header {
-    width: 1000px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
+/* HEADINGS */
 h1,
 h2 {
     text-align: center;
@@ -45,20 +49,7 @@ h2 {
     padding: 15px;
 }
 
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-    margin: 15px;
-}
-
-.history-content img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/*nav,*/
+/* TYPOGRAPHY SPACING */
 p,
 section,
 article {
@@ -66,6 +57,7 @@ article {
     padding: 8px;
 }
 
+/* NAVIGATION */
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -80,21 +72,7 @@ nav a {
     font-weight: bold;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 12px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
+/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -102,20 +80,7 @@ nav a {
 .hero img {
     display: block;
     width: 100%;
-    /*height: auto;*/
 }
-
-/*section:nth-of-type(1) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}*/
-
-/*section:nth-of-type(2) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}*/
 
 .hero h1 {
     position: absolute;
@@ -123,9 +88,9 @@ nav a {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
     background-color: rgba(44, 125, 160, 0.98);
-    color: white;
+    color: var(--secondary-color);
+    opacity: 0.9;
 }
 
 .hero article {
@@ -134,15 +99,9 @@ nav a {
     left: 15px;
     right: 15px;
     padding: 12px;
-    background-color: rgb(44, 125, 160, 0.98);
+    background-color: rgba(44, 125, 160, 0.98);
     border-radius: 10px;
-    opacity: 1;
-    color: #ffffff;
-    border-radius: 10px;
-}
-
-.hero article p {
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .hero article img {
@@ -150,45 +109,28 @@ nav a {
     width: 125px;
     margin-left: 15px;
     border-radius: 8px;
-    padding: 10px;
 }
 
-section p {
-    color: var(--primary-color);
-}
-
-footer p {
-    color: var(--primary-color);
-    margin: 0;
-    padding: 0;
-    /*display: flex;
-    flex-direction: column;
-    padding: 2px;
-    color: var(--primary-color);*/
-}
-
-footer {
-    width: 1000px;
-    margin: 20px auto 0;
-    padding-top: 15px;
-    border-top: 1px solid var(--primary-color);
-
-    display: flex;
-    justify-content: space-between;
+/* HISTORY SECTION */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
     align-items: center;
-    /*border-top: 0.1px var(--secondary-color);
-    margin-top: 15px;
-    padding-top: 0.5px;*/
+    margin: 15px;
 }
 
+.history-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ADVENTURES */
 .adventures {
-    width: 1000px;
-    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    align-items: flex-start;
 }
 
 .adventures h2 {
@@ -197,13 +139,11 @@ footer {
 
 .adventures figure {
     width: 180px;
-    margin: 0;
     text-align: center;
 }
 
 .adventures img {
     width: 100%;
-    padding: 8px;
     height: 120px;
     object-fit: cover;
     border-radius: 16px;
@@ -212,15 +152,28 @@ footer {
 .adventures figcaption {
     margin-top: 8px;
     color: var(--primary-color);
-    font-size: 0.9rem;
 }
 
-.adventure-gallery {
+/* EMPLOYEES */
+.employees {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
+.employees figure {
+    flex: 0 1 180px;
+    text-align: center;
+}
+
+.employees img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+/* CONTACT */
 .contact-info {
     text-align: center;
     margin: 2rem 0;
@@ -230,7 +183,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: start;
 }
 
 .map iframe {
@@ -239,6 +191,7 @@ footer {
     border: none;
 }
 
+/* FORM */
 .form-group {
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -250,17 +203,12 @@ footer {
     width: 100%;
 }
 
-.purpose {
-    display: block;
-}
-
 .purpose label {
     display: block;
     margin: .5rem 0;
 }
 
 .newsletter {
-    display: block;
     margin: 1rem 0;
 }
 
@@ -269,29 +217,29 @@ button {
     padding: .75rem;
 }
 
-.employees {
+/* SOCIAL MEDIA */
+.socialmedia {
     display: flex;
-    flex-wrap: wrap;
-    /*justify-content: center;*/
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 12px;
 }
 
-.employees figure {
-    flex: 0 1 180px;
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--primary-color);
+}
+
+footer p {
     margin: 0;
-    text-align: center;
-}
-
-.employees img {
-    width: 180px;
-    height: 180px;
-    border-radius: 8px;
-}
-
-.employees h2 {
-    width: 100%;
-    margin: 0;
-    text-align: center;
+    color: var(--primary-color);
 }
