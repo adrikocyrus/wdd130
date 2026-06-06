@@ -7,7 +7,7 @@
     <meta name="description"
       content="Learn about Splash Water Rafting Adventures, our history, mission, and exciting white water rafting experiences.">
     <meta name="author" content="Adriko Cyrus">
-    <title>About us | Splash Water Rafting Adventures</title>
+    <title>Contact us | Splash Water Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -41,50 +41,51 @@
                 </iframe>
             </div>
 
-            <div class="contact-form">
-                <form>
+            <div class="group-form">
+                <form action="#" method="post">
+
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Placeholder">
+                        <label for="fullname">Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Placeholder">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
 
-                    <div class="form-group purpose">
-                        <p>Message Purpose</p>
+                    <div class="purpose">
+                        <p>Purpose of Message:</p>
 
-                        <label>
-                            <input type="radio" name="purpose" value="general">
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general">
                             General Inquiry
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
+                        <label for="website">
+                            <input type="radio" id="website" name="purpose" value="website">
                             Website Suggestion
                         </label>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"
-                          placeholder="Type here"></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
                     </div>
 
-                    <label class="newsletter">
-                        <input type="checkbox" name="newsletter">
-                        Please Subscribe me to the monthly newsletter
-                    </label>
+                    <div class="newsletter">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
 
-                    <button type="submit">Get in Touch!</button>
-                </form>
+                        <button type="submit">Message to Splash Water Rafting</button>
+                    </div>
             </div>
 
         </section>
