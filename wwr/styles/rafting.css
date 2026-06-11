@@ -333,8 +333,8 @@ nav {
 }
 
 .nav-logo {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 50px;
     border-radius: 50%;
     background: var(--dark-olive);
     border: 2px solid var(--tan);
@@ -343,12 +343,6 @@ nav {
     justify-content: center;
     flex-shrink: 0;
     margin-right: auto;
-}
-
-.nav-logo svg {
-    width: 26px;
-    height: 26px;
-    fill: var(--tan);
 }
 
 .nav-links {
