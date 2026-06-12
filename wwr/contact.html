@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Learn about Splash Water Rafting Adventures, our history, mission, and exciting white water rafting experiences.">
+      content="Contact Splash Water Rafting Adventures for questions, reservations, and more.">
     <meta name="author" content="Adriko Cyrus">
-    <title>Contact us | Splash Water Rafting Adventures</title>
+    <title>Contact Us | Splash Water Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="White Water Rafting Site Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/z-splash.png" alt="Splash Water Rafting Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <section class="contact-info">
             <h1>Splash Water Rafting Adventure</h1>
@@ -33,19 +38,16 @@
         </section>
 
         <section class="contact-container">
-            <h2 class="visually-hidden">Contact us</h2>
             <div class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.75481836334!2d32.5943462740376!3d0.3232624640172771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb8e2df2cc21%3A0x6d2ac1bddf11aca0!2s15d%20Wampewo%20Ave%2C%20Kampala!5e0!3m2!1sen!2sug!4v1780734324945!5m2!1sen!2sug"
-                  width="600" height="450" allowfullscreen loading="lazy"
+                  width="100%" height="400" allowfullscreen loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                  title="Location map of 15d Wampewo Ave, Kampala, Uganda">
-                </iframe>
+                  title="Location map of 15d Wampewo Ave, Kampala, Uganda"></iframe>
             </div>
 
             <div class="group-form">
                 <form action="#" method="post">
-
                     <div class="form-group">
                         <label for="fullname">Name:</label>
                         <input type="text" id="fullname" name="fullname" required>
@@ -58,17 +60,14 @@
 
                     <div class="purpose">
                         <p>Purpose of Message:</p>
-
                         <label for="general">
                             <input type="radio" id="general" name="purpose" value="general">
                             General Inquiry
                         </label>
-
                         <label for="reservation">
                             <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
-
                         <label for="website">
                             <input type="radio" id="website" name="purpose" value="website">
                             Website Suggestion
@@ -85,46 +84,40 @@
                             <input type="checkbox" id="newsletter" name="newsletter">
                             Please subscribe me to the monthly newsletter
                         </label>
-
-                        <button type="submit">Message to Splash Water Rafting</button>
+                        <button type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
-
         </section>
 
         <section class="employees">
             <h2>Meet Our Team</h2>
-
             <figure>
                 <img src="../images/profile2.jpeg" alt="Operations Manager">
                 <figcaption>Adriko Cyrus - Operations Manager</figcaption>
             </figure>
-
             <figure>
                 <img src="images/guide.jpg" alt="Lead River Guide">
                 <figcaption>Sarah Wakoli - Lead River Guide</figcaption>
             </figure>
-
             <figure>
                 <img src="images/support.jpg" alt="Customer Support Specialist">
                 <figcaption>Kasolo Moses - Customer Support Specialist</figcaption>
             </figure>
         </section>
     </main>
+
     <footer>
-        <p>
-            &COPY; 2026 | Splash Water Rafting Adventures | Adriko Cyrus
-        </p>
+        <p>&copy; 2026 Splash Water Rafting Adventures | Adriko Cyrus</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.jpg" alt="facebook">
+                <img src="images/facebook.jpg" alt="Facebook">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter.jpg" alt="twitter">
+                <img src="images/twitter.jpg" alt="Twitter">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram-logo.jpg" alt="instagram">
+                <img src="images/instagram-logo.jpg" alt="Instagram">
             </a>
         </nav>
     </footer>
